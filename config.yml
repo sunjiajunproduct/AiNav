@@ -1,20 +1,20 @@
 # title of website
-title: %NAME%
+title: AiNav
 
 # description of website
-description: %ACTOR%'s navigation site
+description: duo-mi's navigation site
 
 # favicon of website
-favicon: "https://github.com/%ACTOR%.png?size=40"
+favicon: "https://github.com/duo-mi.png?size=40"
 
 # your website url
-url: https://%ACTOR%.github.io/%NAME%/
+url: https://duo-mi.github.io/AiNav/
 
 # github profile url
-github: "https://github.com/%ACTOR%"
+github: "https://github.com/duo-mi"
 
 # footer message
-footer: © 2021-2021 @%ACTOR%
+footer: © 2021-2021 @duo-mi
 
 # template(theme) of your site, available:
 # 1. webstack (http://webstack.cc)
