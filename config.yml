@@ -41,20 +41,20 @@ content:
     - name: AI体验
       sites:
         - name: Suno
-          description:一个由AI生成音乐创作平台
+          description: 一个由AI生成音乐创作平台
           url: https://suno.com/
         - name: Perplexity AI
-          description:Perplexity AI 是一个AI驱动的搜索工具。
-          url:https://www.perplexity.ai/hub/faq/what-is-perplexity-pro
+          description: Perplexity AI 是一个AI驱动的搜索工具。
+          url: https://www.perplexity.ai/hub/faq/what-is-perplexity-pro
         - name: Sierra
           description: 一款对话式人工智能平台，旨在提升客户体验。
           url: https://sierra.ai/product
         - name: MiniMax
           description: 新一代智能预测文本的情绪、语调AI大模型
-          url:https://www.minimaxi.com/
+          url: https://www.minimaxi.com/
         - name: Google Quick, Draw!
           description: 一款可以识别绘画的小游戏
-          url:https://quickdraw.withgoogle.com/
+          url: https://quickdraw.withgoogle.com/
         - name: Akinator
           description: 一个基于人工智能的“网页精灵”，可以猜测玩家心中所想的虚拟或真实人物。
           url: https://cn.akinator.com/
@@ -76,25 +76,25 @@ content:
         - name: Blaze Designer
           description: Blaze Designer-使用AI以您的品牌风格创建漂亮的一键式内容
           url: https://www.blaze.ai/?ref=producthunt
-        - name:Thunderbit
-          description:Thunderbit-个性化网络AI副驾驶
+        - name: Thunderbit
+          description: Thunderbit-个性化网络AI副驾驶
           url: https://thunderbit.com/?ref=producthunt
-        - name:Amploo
+        - name: Amploo
           description: Amploo-中小企业优化流程和连接团队的单一工具
-          url:https://amploo.io/?ref=producthunt
-        - name:Earth.fm App
+          url: https://amploo.io/?ref=producthunt
+        - name: Earth.fm App
           description: Earth.fm应用程序-900+自然音景直接在您的手机上
-          url:https://earth.fm/app/?ref=producthunt
-        - name:Osmos
-          description:Osmos-与志同道合的专业人士进行1:1对话
-          url:https://osmos.social/?ref=producthunt
+          url: https://earth.fm/app/?ref=producthunt
+        - name: Osmos
+          description: Osmos-与志同道合的专业人士进行1:1对话
+          url: https://osmos.social/?ref=producthunt
         - name: Epsilla
-          description:Epsilla-用您的知识创建AI代理的一体化平台
+          description: Epsilla-用您的知识创建AI代理的一体化平台
           url: https://epsilla.com/?ref=producthunt
         - name: Pathway
           description: Pathway-获取用户洞察的速度提高10倍
           url: https://pathway.cc/?ref=producthunt
-        - name:Carrot Care
+        - name: Carrot Care
           description: 胡萝卜护理-了解和优化您的血液检查
           url: https://carrotcare.health/?ref=producthunt
         - name: BeforeSunset AI 2.0
@@ -103,9 +103,9 @@ content:
         - name: Meshy-4
           description: Meshy-4-AI3D模型发生器
           url: https://www.meshy.ai/?utm_source=producthunt&utm_medium=website&utm_campaign=meshy4&ref=producthunt
-        - name:Rainbow Weather
+        - name: Rainbow Weather
           description: 彩虹天气-AI预报，今天的天气和飓风追踪器
-          url:https://www.rainbow.ai/?ref=producthunt
+          url: https://www.rainbow.ai/?ref=producthunt
         - name: Let's Trip
           description: Let's Trip-一个完整的旅行计划平台
           url: https://www.letstrip.world/
@@ -118,21 +118,21 @@ content:
         - name:Lite: App Launcher
           description: 精简版：应用程序启动器-一个最小的应用程序启动器为您的iPhone。
           url: https://www.getlite.app/?ref=producthunt
-        - name:Fujiyama
-          description:藤山-与AI实时练习自然日语对话
-          url:https://fujiyama.chat/?ref=producthunt
+        - name: Fujiyama
+          description: 藤山-与AI实时练习自然日语对话
+          url: https://fujiyama.chat/?ref=producthunt
         - name: Brzzy Weather
           description: 暴躁的天气——一次GIF地让预报变得有趣
           url: https://brzzy.co/?ref=producthunt
         - name: Diff Text
-          description:Diff Text-死简单文本比较
+          description: Diff Text-死简单文本比较
           url: https://difftext.com/?ref=producthunt
-        - name:Compress Image
+        - name: Compress Image
           description: 压缩图像-只需单击两次即可在macOS上压缩任何图像，直接从Finder
           url: https://compressimage.app/?ref=producthunt
         - name: OneMovie for iOS
           description: OneMovieiOS-使用OneMovie查找即时观看的电影
-          url:https://www.producthunt.com/products/onemovie#onemovie-for-ios
+          url: https://www.producthunt.com/products/onemovie#onemovie-for-ios
     # - name: 界面灵感
     #   sites:
     #     - name: 咕噜素材
