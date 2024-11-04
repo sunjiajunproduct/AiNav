@@ -32,6 +32,20 @@
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/css/nav.css">
     <script src="https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/css/search.css">
+    <style>
+        .navbar-fix {
+            position: fixed;
+            /* 固定定位 */
+            top: 0;
+            /* 距离顶部为0 */
+            left: 0;
+            /* 距离左边为0 */
+            right: 0;
+            /* 距离右边为0 */
+            z-index: 1000;
+            /* 确保在其他内容之上 */
+        }
+    </style>
     <script type="text/javascript">
         function search() {
             $(".search-icon").css("opacity", "1");
@@ -205,6 +219,7 @@
 
             if (night == '0') {
                 document.body.classList.add('night');
+                document.getElementById('AI').style.color = "#d3d3d3";
                 document.cookie = "night=1;path=/"
             } else {
                 document.body.classList.remove('night');
@@ -266,7 +281,9 @@
             </div>
         </div>
         <div class="main-content">
-            <nav class="navbar user-info-navbar" style="height: 70px;position: relative;" role="navigation">
+            <nav class="navbar user-info-navbar navbar-fix"
+                style="height: 70px;position: sticky;  z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); transition: top 0.3s; /* 添加阴影 */ /* 固定定位 */ /* 添加过渡效果 */"
+                role="navigation">
                 <!-- User Info, Notifications and Menu Bar -->
                 <!-- Left links for user info navbar -->
                 <ul class="user-info-menu left-links list-inline list-unstyled">
@@ -290,7 +307,7 @@
                     <strong>行研顶尖AI产品体验台Program</strong>
                 </p> -->
                 <ul style="display: flex;position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);">
-                    <p class="overflowClip_2" style="font-size: 38px;">
+                    <p id="AI" style="font-size: 36px;color: #474343;">
                         <strong>行研顶尖AI产品体验台Program</strong>
                     </p>
                 </ul>
@@ -944,6 +961,7 @@
                     document.body.classList.add('night');
                     document.cookie = "night=1;path=/";
                     console.log('夜间模式开启');
+                    document.getElementById('AI').style.color = "#fff";
                 } else {
                     document.body.classList.remove('night');
                     document.cookie = "night=0;path=/";
@@ -958,6 +976,19 @@
                 }
             }
         })();
+
+        const navbar = document.querySelector('.navbar-fix');
+        const originalOffsetY = navbar.offsetTop;
+
+        function onScroll() {
+            if (window.scrollY > originalOffsetY) {
+                navbar.classList.add('fixed'); // 添加固定类
+            } else {
+                navbar.classList.remove('fixed'); // 移除固定类
+            }
+        }
+
+        window.addEventListener('scroll', onScroll);
     </script>
     <!-- Bottom Scripts -->
     <script src="https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/js/bootstrap.min.js"></script>
