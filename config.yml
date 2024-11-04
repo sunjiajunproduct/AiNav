@@ -115,7 +115,7 @@ content:
         - name: figma.to.website
           description: figma.to.website-无需离开Figma即可设计和部署网站
           url: https://figma.to.website/?ref=producthunt
-        - name:Lite: App Launcher
+        - name: App Launcher
           description: 精简版：应用程序启动器-一个最小的应用程序启动器为您的iPhone。
           url: https://www.getlite.app/?ref=producthunt
         - name: Fujiyama
