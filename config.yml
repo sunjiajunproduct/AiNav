@@ -53,30 +53,30 @@ content:
         - name: Anthropic
           description: 一款专注于安全性和可靠性AI 模型产品
           url: https://www.anthropic.com/
-    - name: AI编程
-      sites:
+     - name: AI编程
+       sites:
         - name: Bolt
           description: 一种创新简化开发者的工作流程平台
           url: https://bolt.new/
-    - name: AI游戏
-      sites:
-       - name: Google Quick, Draw!
+     - name: AI游戏
+       sites:
+        - name: Google Quick, Draw!
           description: 一款可以识别绘画的小游戏
           url: https://quickdraw.withgoogle.com/
-       - name: Akinator
+        - name: Akinator
           description: 一个基于人工智能的“网页精灵”，可以猜测玩家心中所想的虚拟或真实人物。
           url: https://cn.akinator.com/
-    - name: 生活
-      sites:
-       - name: Suno
+     - name: 生活
+       sites:
+        - name: Suno
           description: 一个由AI生成音乐创作平台
           url: https://suno.com/
-    - name: 桌面应用
-      sites:
-       - name: cursor
+     - name: 桌面应用
+       sites:
+        - name: cursor
           description: 一个高级的 AI 驱动的代码编辑器
           url: https://www.cursor.com/
-            # - name: Producthunt
+        # - name: Producthunt
         #   description: 发现新鲜有趣的产品
         #   url: https://www.producthunt.com/
         # - name: Youtube
