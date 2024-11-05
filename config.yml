@@ -1,5 +1,5 @@
 # title of website
-title: 行研顶尖AI产品体验台Program
+title: 行研AI产品体验台Program
 
 # description of website
 description: duo-mi's navigation site
@@ -116,7 +116,7 @@ content:
           description: figma.to.website-无需离开Figma即可设计和部署网站
           url: https://figma.to.website/?ref=producthunt
         - name: App Launcher
-          description: 精简版：应用程序启动器-一个最小的应用程序启动器为您的iPhone。
+          description: 应用程序启动器-一个最小的应用程序启动器为您的iPhone
           url: https://www.getlite.app/?ref=producthunt
         - name: Fujiyama
           description: 藤山-与AI实时练习自然日语对话
