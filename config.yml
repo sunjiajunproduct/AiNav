@@ -38,8 +38,8 @@ webstack:
 
 content:
   categories:
-    - name: AI聊天助手
-      sites:
+     - name: AI聊天助手
+       sites:
         - name: Perplexity AI
           description: Perplexity AI 是一个AI驱动的搜索工具。
           url: https://www.perplexity.ai/?login-source=oneTapHome
