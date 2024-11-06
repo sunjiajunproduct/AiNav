@@ -8,7 +8,7 @@ description: duo-mi's navigation site
 favicon: "https://github.com/duo-mi.png?size=40"
 
 # your website url
-url:  https://duo-mi.github.io/AiNav/
+url: https://duo-mi.github.io/AiNav/
 
 # github profile url
 github: "https://github.com/duo-mi"
@@ -22,7 +22,7 @@ template: webstack
 
 # Google analytics
 google_analytics: "G-EXE1PJ8CR2"
- 
+
 webstack:
   search:
     enabled: true
@@ -38,41 +38,41 @@ webstack:
 
 content:
   categories:
-     - name: AI聊天助手
-       sites:
+    - name: AI聊天助手
+      sites:
         - name: Perplexity AI
           description: Perplexity AI 是一个AI驱动的搜索工具。
           url: https://www.perplexity.ai/?login-source=oneTapHome
-        - name: Sierra
-          description: 一款对话式人工智能平台，旨在提升客户体验。
-          url: https://sierra.ai/product
-        - name: MiniMax
-          description: 新一代智能预测文本的情绪、语调AI大模型
-          url: https://www.minimaxi.com/
-      
-        - name: Anthropic
-          description: 一款专注于安全性和可靠性AI 模型产品
-          url: https://www.anthropic.com/
-     - name: AI编程
-       sites:
+        # - name: Sierra
+        #   description: 一款对话式人工智能平台，旨在提升客户体验。
+        #   url: https://sierra.ai/product
+        # - name: MiniMax
+        #   description: 新一代智能预测文本的情绪、语调AI大模型
+        #   url: https://www.minimaxi.com/
+
+        # - name: Anthropic
+        #   description: 一款专注于安全性和可靠性AI 模型产品
+        #   url: https://www.anthropic.com/
+    - name: AI编程
+      sites:
         - name: Bolt
           description: 一种创新简化开发者的工作流程平台
           url: https://bolt.new/
-     - name: AI游戏
-       sites:
+    - name: AI游戏
+      sites:
         - name: Google Quick, Draw!
           description: 一款可以识别绘画的小游戏
           url: https://quickdraw.withgoogle.com/
         - name: Akinator
           description: 一个基于人工智能的“网页精灵”，可以猜测玩家心中所想的虚拟或真实人物。
           url: https://cn.akinator.com/
-     - name: 生活
-       sites:
+    - name: 生活
+      sites:
         - name: Suno
           description: 一个由AI生成音乐创作平台
           url: https://suno.com/
-     - name: 桌面应用
-       sites:
+    - name: 桌面应用
+      sites:
         - name: cursor
           description: 一个高级的 AI 驱动的代码编辑器
           url: https://www.cursor.com/
@@ -83,7 +83,6 @@ content:
         #   description: 全球最大的学习分享平台
         #   url: https://www.youtube.com/
 
-        
         # - name: Blaze Designer
         #   description: Blaze Designer-使用AI以您的品牌风格创建漂亮的一键式内容
         #   url: https://www.blaze.ai/?ref=producthunt
