@@ -16,27 +16,7 @@
         gtag('js', new Date());
         gtag('config', 'G-EXE1PJ8CR2');
     </script>
-    <style>
-        .navbar-fix {
-            position: fixed;
-            /* 固定定位 */
-            top: 0;
-            /* 距离顶部为0 */
-            left: 0;
-            /* 距离左边为0 */
-            right: 0;
-            /* 距离右边为0 */
-            z-index: 1000;
-            /* 确保在其他内容之上 */
-        }
 
-        .col-sm-3 {
-            width: 25% !important;
-            margin: 0 36px;
-            height: 150px;
-            font-size: 16px;
-        }
-    </style>
     <link rel="shortcut icon" href="https://github.com/duo-mi.png?size=40">
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
@@ -221,16 +201,12 @@
         //夜间模式切换
         function switchNightMode() {
             var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-            console.log(night);
-
             if (night == '0') {
                 document.body.classList.add('night');
-                document.getElementById('AI').style.color = "#d3d3d3";
                 document.cookie = "night=1;path=/"
             } else {
                 document.body.classList.remove('night');
                 document.cookie = "night=0;path=/"
-                document.getElementById('AI').style.color = "#474343";
             }
         }
     </script>
@@ -253,21 +229,17 @@
     <div class="page-container">
         <div class="sidebar-menu toggle-others fixed">
             <div class="sidebar-menu-inner">
-                <header class="logo-env" style="padding: 20px 10px !important;">
+                <header class="logo-env">
                     <!-- logo -->
                     <div class="logo">
                         <a href="/" class="logo-expanded">
 
-                            <p class="overflowClip_2" style="font-size: 16px;width:100%">
-                                <strong>行研AI产品体验台Program</strong>
-                            </p>
+                            <p class="overflowClip_2" style="font-size: 20px;"><strong>行研AI产品体验台Program</strong></p>
 
                         </a>
                         <a href="/" class="logo-collapsed">
 
-                            <p class="overflowClip_2" style="font-size: 16px;width:100%">
-                                <strong>行研AI产品体验台Program</strong>
-                            </p>
+                            <p class="overflowClip_2" style="font-size: 20px;"><strong>行研AI产品体验台Program</strong></p>
 
                         </a>
                     </div>
@@ -312,9 +284,7 @@
             </div>
         </div>
         <div class="main-content">
-            <nav class="navbar user-info-navbar navbar-fix"
-                style="height: 70px;position: sticky;  z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); transition: top 0.3s; /* 添加阴影 */ /* 固定定位 */ /* 添加过渡效果 */"
-                role="navigation">
+            <nav class="navbar user-info-navbar" role="navigation">
                 <!-- User Info, Notifications and Menu Bar -->
                 <!-- Left links for user info navbar -->
                 <ul class="user-info-menu left-links list-inline list-unstyled">
@@ -344,223 +314,175 @@
                 <!-- <ul class="user-info-menu right-links list-inline list-unstyled">
                     <li class="hidden-sm hidden-xs">
                         <a href="https://github.com/duo-mi" target="_blank">
-                            <i class="fa-github"></i> GitHub
+                            <i class="fa-github"></i>  GitHub
                         </a>
                     </li>
-                </ul> -->
+                </ul>
             </nav>
             <section class="sousuo">
-                <div class="search">
-                    <div class="search-box">
-                        <span class="search-icon"
-                            style="background: url('https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/images/search_icon.png') -40px 0px; opacity: 1;"></span>
-                        <input type="text" id="txt" class="search-input" autocomplete="off"
-                            placeholder="请输入关键字，按回车 / Enter 搜索">
-                        <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
-                    </div>
-                    <!-- 搜索热词 -->
-                    <div class="box search-hot-text" id="box" style="display: none;">
-                        <ul></ul>
-                    </div>
-                    <!-- 搜索引擎 -->
-                    <div class="search-engine" style="display: none;">
-                        <div class="search-engine-head">
-                            <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
-                            <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
-                        </div>
-                        <ul class="search-engine-list search-engine-list_zmki_ul">
-                        </ul>
-                    </div>
+              <div class="search">
+                <div class="search-box">
+                  <span class="search-icon" style="background: url('https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/images/search_icon.png') -40px 0px; opacity: 1;"></span>
+                  <input type="text" id="txt" class="search-input" autocomplete="off" placeholder="请输入关键字，按回车 / Enter 搜索">
+                  <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
                 </div>
-            </section>
-            <script>search()</script>
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI聊天助手"></i>AI聊天助手</h4>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://www.perplexity.ai/?login-source=oneTapHome', '_blank')"
-                        data-toggle="tooltip" data-placement="bottom" title=""
-                        data-original-title="https://www.perplexity.ai/?login-source=oneTapHome">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/www.perplexity.ai" class="lozad img-circle"
-                                    width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Perplexity AI</strong>
-                                </a>
-                                <p class="overflowClip_2">Perplexity AI 是一个AI驱动的搜索工具。</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- 搜索热词 -->
+                <div class="box search-hot-text" id="box" style="display: none;">
+                    <ul></ul>
                 </div>
-                <!-- <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://sierra.ai/product', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://sierra.ai/product">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/sierra.ai" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Sierra</strong>
-                                </a>
-                                <p class="overflowClip_2">一款对话式人工智能平台，旨在提升客户体验。</p>
-                            </div>
-                        </div>
+                <!-- 搜索引擎 -->
+                <div class="search-engine" style="display: none;">
+                    <div class="search-engine-head">
+                        <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
+                        <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
                     </div>
+                    <ul class="search-engine-list search-engine-list_zmki_ul">
+                    </ul>
                 </div>
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.minimaxi.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.minimaxi.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/www.minimaxi.com" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>MiniMax</strong>
-                                </a>
-                                <p class="overflowClip_2">新一代智能预测文本的情绪、语调AI大模型</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.anthropic.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.anthropic.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/www.anthropic.com" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Anthropic</strong>
-                                </a>
-                                <p class="overflowClip_2">一款专注于安全性和可靠性AI 模型产品</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <br />
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI编程"></i>AI编程</h4>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://bolt.new/', '_blank')" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="https://bolt.new/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/bolt.new" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Bolt</strong>
-                                </a>
-                                <p class="overflowClip_2">一种创新简化开发者的工作流程平台</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI游戏"></i>AI游戏</h4>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://quickdraw.withgoogle.com/', '_blank')" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="https://quickdraw.withgoogle.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/quickdraw.withgoogle.com" class="lozad img-circle"
-                                    width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Google Quick, Draw!</strong>
-                                </a>
-                                <p class="overflowClip_2">一款可以识别绘画的小游戏</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://cn.akinator.com/', '_blank')" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="https://cn.akinator.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/cn.akinator.com" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Akinator</strong>
-                                </a>
-                                <p class="overflowClip_2">一个基于人工智能的“网页精灵”，可以猜测玩家心中所想的虚拟或真实人物。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="生活"></i>生活</h4>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://suno.com/', '_blank')" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="https://suno.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/suno.com" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Suno</strong>
-                                </a>
-                                <p class="overflowClip_2">一个由AI生成音乐创作平台</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="桌面应用"></i>桌面应用</h4>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info"
-                        onclick="window.open('https://www.cursor.com/', '_blank')" data-toggle="tooltip"
-                        data-placement="bottom" title="" data-original-title="https://www.cursor.com/">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="https://f.start.me/www.cursor.com" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>cursor</strong>
-                                </a>
-                                <p class="overflowClip_2">一个高级的 AI 驱动的代码编辑器</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <!-- Main Footer -->
-            <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
-            <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
-            <!-- Or class "fixed" to  always fix the footer to the end of page -->
-            <footer class="main-footer sticky footer-type-1">
-                <div class="footer-inner">
-                    <!-- Add your copyright text here -->
-                    <div class="footer-text"><strong>© 2021-2021 @duo-mi</strong></div>
-                    <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
-                    <div class="go-up">
-                        <a href="#" rel="go-top">
-                            <i class="fa-angle-up"></i>
-                        </a>
-                    </div>
-                </div>
-            </footer>
         </div>
+        </section>
+        <script>search()</script>
+        <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI聊天助手"></i>AI聊天助手</h4>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://www.perplexity.ai/?login-source=oneTapHome', '_blank')"
+                    data-toggle="tooltip" data-placement="bottom" title=""
+                    data-original-title="https://www.perplexity.ai/?login-source=oneTapHome">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/www.perplexity.ai" class="lozad img-circle" width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>Perplexity AI</strong>
+                            </a>
+                            <p class="overflowClip_2">Perplexity AI 是一个AI驱动的搜索工具。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI编程"></i>AI编程</h4>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://bolt.new/', '_blank')" data-toggle="tooltip" data-placement="bottom"
+                    title="" data-original-title="https://bolt.new/">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/bolt.new" class="lozad img-circle" width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>Bolt</strong>
+                            </a>
+                            <p class="overflowClip_2">一种创新简化开发者的工作流程平台</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="AI游戏"></i>AI游戏</h4>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://quickdraw.withgoogle.com/', '_blank')" data-toggle="tooltip"
+                    data-placement="bottom" title="" data-original-title="https://quickdraw.withgoogle.com/">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/quickdraw.withgoogle.com" class="lozad img-circle"
+                                width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>Google Quick, Draw!</strong>
+                            </a>
+                            <p class="overflowClip_2">一款可以识别绘画的小游戏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://cn.akinator.com/', '_blank')" data-toggle="tooltip"
+                    data-placement="bottom" title="" data-original-title="https://cn.akinator.com/">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/cn.akinator.com" class="lozad img-circle" width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>Akinator</strong>
+                            </a>
+                            <p class="overflowClip_2">一个基于人工智能的“网页精灵”，可以猜测玩家心中所想的虚拟或真实人物。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="生活"></i>生活</h4>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://suno.com/', '_blank')" data-toggle="tooltip" data-placement="bottom"
+                    title="" data-original-title="https://suno.com/">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/suno.com" class="lozad img-circle" width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>Suno</strong>
+                            </a>
+                            <p class="overflowClip_2">一个由AI生成音乐创作平台</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="桌面应用"></i>桌面应用</h4>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="xe-widget xe-conversations box2 label-info"
+                    onclick="window.open('https://www.cursor.com/', '_blank')" data-toggle="tooltip"
+                    data-placement="bottom" title="" data-original-title="https://www.cursor.com/">
+                    <div class="xe-comment-entry">
+                        <a class="xe-user-img">
+                            <img data-src="https://f.start.me/www.cursor.com" class="lozad img-circle" width="40">
+                        </a>
+                        <div class="xe-comment">
+                            <a href="#" class="xe-user-name overflowClip_1">
+                                <strong>cursor</strong>
+                            </a>
+                            <p class="overflowClip_2">一个高级的 AI 驱动的代码编辑器</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Main Footer -->
+        <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+        <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+        <!-- Or class "fixed" to  always fix the footer to the end of page -->
+        <footer class="main-footer sticky footer-type-1">
+            <div class="footer-inner">
+                <!-- Add your copyright text here -->
+                <div class="footer-text"><strong>© 2021-2021 @duo-mi</strong></div>
+                <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+                <div class="go-up">
+                    <a href="#" rel="go-top">
+                        <i class="fa-angle-up"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     <!-- 锚点平滑移动 -->
     <script type="text/javascript">
@@ -644,18 +566,6 @@
                 }
             }
         })();
-        const navbar = document.querySelector('.navbar-fix');
-        const originalOffsetY = navbar.offsetTop;
-
-        function onScroll() {
-            if (window.scrollY > originalOffsetY) {
-                navbar.classList.add('fixed'); // 添加固定类
-            } else {
-                navbar.classList.remove('fixed'); // 移除固定类
-            }
-        }
-
-        window.addEventListener('scroll', onScroll);
     </script>
     <!-- Bottom Scripts -->
     <script src="https://fastly.jsdelivr.net/gh/x1ah/webstack-assets@master/assets/js/bootstrap.min.js"></script>
