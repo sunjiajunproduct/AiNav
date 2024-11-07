@@ -46,9 +46,9 @@ content:
         # - name: Sierra
         #   description: 一款对话式人工智能平台，旨在提升客户体验。
         #   url: https://sierra.ai/product
-        # - name: MiniMax
-        #   description: 新一代智能预测文本的情绪、语调AI大模型
-        #   url: https://www.minimaxi.com/
+        - name: 海螺AI
+          description: 一款开创性文本生成视频AI工具
+          url: https://hailuoai.com/
 
         # - name: Anthropic
         #   description: 一款专注于安全性和可靠性AI 模型产品
